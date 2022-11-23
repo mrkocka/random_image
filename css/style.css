@@ -1,32 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coustard", serif;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    gap: 2;
-    justify-content: center;
-    align-items: center;
+body {
+  background-image: url(../img/background-stars-desktop_00cbf8a9.jpeg);
 }
 
-
-.image-box{
-    width: 500px;
-    min-height: 300px;
-    margin-top: 10rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
+.container {
+  width: 80rem;
+  height: 50rem;
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.644);
+  box-shadow: rgba(255, 255, 255, 0.521) 0px 5px 15px;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-.image-box img{
-    width: 400px;
-    border-radius: 20px;
+button {
+  width: 15rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
 }
 
-button{
-    width: 10rem;
-    height: 3rem;
+button:hover {
+  background-color: black;
+  outline: solid 1px black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 2s;
+}
+
+.image-box {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.image-box img {
+  width: 340px;
+  border-radius: 20px;
+}
+
+.image-box p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  letter-spacing: 0.2rem;
 }

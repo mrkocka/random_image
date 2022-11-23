@@ -1,22 +1,45 @@
-let images = [
-    "./img/darth-sidius.jpg","./img/R2-D2.jpg", "./img/darth-vader.jpg", "./img/Obi-wan.jpg", "./img/Qui-Gon_Jinn.webp", "./img/yoda.webp"
+let SWCharacter = [
+  {
+    name: "Darth Sidius",
+    picture: "darth-sidius.webp",
+  },
+
+  {
+    name: "R2-D2",
+    picture: "R2-D2.webp",
+  },
+
+  {
+    name: "Darth Vader",
+    picture: "darth-vader.webp",
+  },
+
+  {
+    name: "Obi-wan Kenobi",
+    picture: "obi-wan.webp",
+  },
+
+  {
+    name: "Qui-Gon Jinn",
+    picture: "Qui-Gon_Jinn.webp",
+  },
+
+  {
+    name: "Yoda",
+    picture: "yoda.webp",
+  },
 ];
 
 let button = document.getElementById("button");
+let box = document.getElementById("js-image-box");
 
-let imagesLength = images.length; 
-let randomNumber = Math.random();
-randomNumber= randomNumber*imagesLength;
-randomNumber = Math.floor(randomNumber);    
-let choosenImage = images[randomNumber];
+button.addEventListener("click", getRandomSW);
 
+function getRandomSW() {
+  proba = SWCharacter[Math.floor(Math.random() * SWCharacter.length)];
 
-
-
-button.addEventListener("click", random);
-
-
-function random(){
-    character.src = choosenImage;
-    return 
+  box.innerHTML = `
+  <img src="./img/${proba.picture}">
+  <p>${proba.name}</p>
+  `;
 }
