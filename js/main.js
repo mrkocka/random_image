@@ -32,18 +32,34 @@ let SWCharacter = [
   },
 ];
 
+//Variable
 let button = document.getElementById("button");
 let box = document.getElementById("js-image-box");
+let gediv = document.querySelectorAll(".gen-button");
+let genButton = document.querySelectorAll(".gen-chec");
 
+//Event
 button.addEventListener("click", getRandomSW);
+genButton[0].addEventListener("click", gender);
+genButton[1].addEventListener("click", gender);
+
+//Function
+function gender() {
+  if (genButton[0].checked === true) {
+    gediv[0].classList.toggle("gen-button-margin");
+    console.log("vonal");
+  }
+  if (genButton[1].checked === true) {
+    gediv[1].classList.toggle("gen-button-margin");
+  }
+}
 
 function getRandomSW() {
-  proba = SWCharacter[Math.floor(Math.random() * SWCharacter.length)];
-
+  randomData = SWCharacter[Math.floor(Math.random() * SWCharacter.length)];
   box.innerHTML = `
-  <img src="./img/${proba.picture}">
-  <p>${proba.name}</p>
-  <p>${proba.order}</p>
-  <p>${proba.species}</p>
+  <img src="./img/${randomData.picture}">
+  <p>${randomData.name}</p>
+  <p>${randomData.order}</p>
+  <p>${randomData.species}</p>
   `;
 }
