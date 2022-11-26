@@ -2,6 +2,8 @@ let SWCharacter = [
   {
     name: "Darth Sidius",
     picture: "darth-sidius.webp",
+    order: "test data",
+    species: "test data",
   },
 
   {
@@ -41,5 +43,7 @@ function getRandomSW() {
   box.innerHTML = `
   <img src="./img/${proba.picture}">
   <p>${proba.name}</p>
+  <p>${proba.order}</p>
+  <p>${proba.species}</p>
   `;
 }

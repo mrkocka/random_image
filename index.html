@@ -16,9 +16,28 @@
   <body>
     <section class="container">
       <h1>Ki lennél a STAR WARS világában?</h1>
+      <div class="gender-container">
+        <div class="button-area">
+          <label for="female">
+            <div class="button-style gen-button">
+              <img src="./img/button/gender-female.svg" alt="férfiszimbolum" />
+            </div>
+            <input type="checkbox" name="" id="female" />
+          </label>
+          <label for="male">
+            <div class="button-style gen-button">
+              <img src="./img/button/gender-male.svg" alt="nőiszimbolum" />
+            </div>
+            <input type="checkbox" name="" id="male" />
+          </label>
+        </div>
+        <h2>Kérlek válasz nemet</h2>
+      </div>
       <div class="gander"></div>
-      <button id="button">Lássuk</button>
-      <div id="js-image-box" class="image-box"></div>
+      <button id="button" class="button-style">Lássuk</button>
+      <div id="js-image-box" class="image-box">
+        
+      </div>
     </section>
 
     <script src="./js/main.js"></script>

@@ -3,32 +3,88 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Coustard", serif;
+  color: ghostwhite;
+  text-shadow: 2px 2px 4px black;
 }
 
 body {
   background-image: url(../img/background-stars-desktop_00cbf8a9.jpeg);
 }
 
+/*----------------------------------Container----------------------------------------------------*/
+
 .container {
   width: 80rem;
-  height: 50rem;
+  height: 55rem;
   padding: 1rem;
   background-color: rgba(128, 128, 128, 0.644);
   box-shadow: rgba(255, 255, 255, 0.521) 0px 5px 15px;
-  margin: 5rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
+
+.button-style {
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background-color: ghostwhite;
+}
+
+/*----------------------------------Gender-Container----------------------------------------------------*/
+
+.gender-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-area {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+.gen-button {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.gen-button:hover {
+  outline: 4px solid black;
+}
+
+.gen-button-margin {
+  outline: 4px solid black;
+}
+
+.gen-button img {
+  width: 2.3rem;
+}
+
+.gender-container h2 {
+  font-size: 1.2rem;
+}
+
+/*----------------------------------Middle Button----------------------------------------------------*/
 
 button {
   width: 15rem;
   height: 3rem;
   font-size: 2rem;
-  border-radius: 25px;
-  border: none;
-  font-weight: bold;
+  color: black;
+  text-shadow: none;
 }
 
 button:hover {
@@ -38,6 +94,8 @@ button:hover {
   cursor: pointer;
   transition: background-color 2s;
 }
+
+/*----------------------------------Character ----------------------------------------------------*/
 
 .image-box {
   width: 90%;
@@ -54,12 +112,12 @@ h1 {
 }
 
 .image-box img {
-  width: 340px;
+  width: 230px;
   border-radius: 20px;
 }
 
 .image-box p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 3px black;
